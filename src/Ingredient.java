@@ -26,6 +26,12 @@ public class Ingredient {
 
     @Override
     public String toString() {
+        if (quantity % 1 == 0 && characteristic == null) {
+            return (int) quantity + " " + unit + " " + name;
+        }
+        if (quantity % 1 == 0 && characteristic != null) {
+            return (int) quantity + " " + unit + " " + characteristic + " " + name;
+        }
         if (characteristic == null) {
             return quantity + " " + unit + " " + name;
         }

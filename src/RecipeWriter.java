@@ -1,9 +1,9 @@
 import java.util.ArrayList;
 
 public class RecipeWriter {
-    public String recipeName;
-    public ArrayList<Ingredient> ingredients;
-    public ArrayList<Instruction> instructions;
+    private final String recipeName;
+    private final ArrayList<Ingredient> ingredients;
+    private final ArrayList<Instruction> instructions;
 
 
     public RecipeWriter(String name, ArrayList<Ingredient> ingredient_list, ArrayList<Instruction> instruction_list) {
