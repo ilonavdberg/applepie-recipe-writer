@@ -1,9 +1,9 @@
 import java.util.ArrayList;
 
 public class RecipeWriter {
-    static String recipeName;
-    static ArrayList<Ingredient> ingredients;
-    static ArrayList<Instruction> instructions;
+    public String recipeName;
+    public ArrayList<Ingredient> ingredients;
+    public ArrayList<Instruction> instructions;
 
 
     public RecipeWriter(String name, ArrayList<Ingredient> ingredient_list, ArrayList<Instruction> instruction_list) {
@@ -20,7 +20,7 @@ public class RecipeWriter {
         WriteInstructions();
     }
 
-    public static void WriteIngredients() {
+    private void WriteIngredients() {
         System.out.println("Ingrediënten: ");
         for (Ingredient ingredient : ingredients) {
             System.out.print(" - ");
@@ -28,7 +28,7 @@ public class RecipeWriter {
         }
     }
 
-    public static void WriteInstructions() {
+    private void WriteInstructions() {
         System.out.println("Bereidingswijze: ");
         for (Instruction instruction : instructions) {
             System.out.print(" - ");
