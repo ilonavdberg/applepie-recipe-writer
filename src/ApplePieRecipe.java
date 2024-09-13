@@ -4,7 +4,7 @@ public class ApplePieRecipe {
     public static ArrayList<Ingredient> getIngredients() {
         ArrayList<Ingredient> ingredients = new ArrayList<>();
 
-        ingredients.add(new Ingredient("roomboter", "gezouten", "gram", 250));
+        ingredients.add(new Ingredient("roomboter", "gezouten", "gram", 200));
         ingredients.add(new Ingredient("basterd suiker", "witte", "gram", 200));
         ingredients.add(new Ingredient("zelfrijzend bakmeel", "gram", 400));
         ingredients.add(new Ingredient("ei", "stuk(s)", 1));
