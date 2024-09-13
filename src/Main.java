@@ -1,11 +1,7 @@
 
 public class Main {
     public static void main(String[] args) {
-        ApplePieRecipe applePieRecipe = new ApplePieRecipe();
-
-        var applePieWriter = new RecipeWriter("Apple Pie", applePieRecipe.ingredients, applePieRecipe.instructions);
-
+        var applePieWriter = new RecipeWriter("Apple Pie", ApplePieRecipe.getIngredients(), ApplePieRecipe.getInstructions());
         applePieWriter.WriteRecipe();
-
     }
 }

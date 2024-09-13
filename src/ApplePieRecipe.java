@@ -1,10 +1,9 @@
 import java.util.ArrayList;
 
 public class ApplePieRecipe {
-    public ArrayList<Ingredient> ingredients = new ArrayList<>();
-    public ArrayList<Instruction> instructions = new ArrayList<>();
+    public static ArrayList<Ingredient> getIngredients() {
+        ArrayList<Ingredient> ingredients = new ArrayList<>();
 
-    public ApplePieRecipe() {
         ingredients.add(new Ingredient("roomboter", "gezouten", "gram", 250));
         ingredients.add(new Ingredient("basterd suiker", "witte", "gram", 200));
         ingredients.add(new Ingredient("zelfrijzend bakmeel", "gram", 400));
@@ -16,6 +15,12 @@ public class ApplePieRecipe {
         ingredients.add(new Ingredient("kaneel", "theelepels", 3));
         ingredients.add(new Ingredient("paneermeel", "gram", 15));
 
+        return ingredients;
+    }
+
+    public static ArrayList<Instruction> getInstructions() {
+        ArrayList<Instruction> instructions = new ArrayList<>();
+
         instructions.add(new Instruction("Verwarm de oven van te voren op 170 graden Celsius (boven en onderwarmte)"));
         instructions.add(new Instruction("Klop het ei los en verdeel deze in twee delen. De ene helft is voor het deeg, het andere deel is voor het bestrijken van de appeltaart."));
         instructions.add(new Instruction("Meng de boter, bastard suiker, zelfrijzend bakmeel, een helft van het ei, vanille suiker en een snufje zout tot een stevig deeg en verdeel deze in 3 gelijke delen."));
@@ -26,6 +31,8 @@ public class ApplePieRecipe {
         instructions.add(new Instruction("Rol het laatste deel van de deeg uit tot een dunne lap en snij stroken van ongeveer 1 cm breed."));
         instructions.add(new Instruction("Leg de stroken kuislings op de appeltaart. Met wat extra deegstroken werk je de rand rondom af. Gebruik het overgebleven ei om de bovenkant van het deeg te bestrijken"));
         instructions.add(new Instruction("Zet de taart iets onder het midden van de oven. Bak de taart in 60 minuten op 170 graden Celsius (boven en onderwarmte) gaar en goudbruin."));
+
+        return instructions;
     }
 
 }
