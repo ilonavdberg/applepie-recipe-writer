@@ -1,6 +1,10 @@
 import java.util.ArrayList;
 
 public class ApplePieRecipe {
+    public static String getTitle() {
+        return "Appeltaart";
+    }
+
     public static ArrayList<Ingredient> getIngredients() {
         ArrayList<Ingredient> ingredients = new ArrayList<>();
 
