@@ -4,13 +4,6 @@ public class Ingredient {
     public String unit;
     public float quantity;
 
-    public Ingredient(String name, String characteristic, String unit, int quantity) {
-        this.name = name;
-        this.characteristic = characteristic;
-        this.unit = unit;
-        this.quantity = quantity;
-    }
-
     public Ingredient(String name, String characteristic, String unit, float quantity) {
         this.name = name;
         this.characteristic = characteristic;
